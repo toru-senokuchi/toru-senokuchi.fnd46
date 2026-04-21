@@ -21,28 +21,19 @@
         <main id="vege-container" class="container"></main>
     </div>
 
-    <!-- 詳細画面：紹介ページ（初期状態はhiddenで隠す） -->
+    <!-- 詳細画面：紹介ページ -->
     <div id="detail-page" class="hidden">
+        <!-- ヘッダーエリア（ボタンとタイトルをまとめる） -->
         <div class="detail-header">
-            <button id="back-btn">← 戻る</button>
-            <h2 id="vege-title">野菜の名前</h2>
-        </div>
-        
-        <div class="detail-layout">
-        
-            <!-- ：見分け方 -->
-            <div class="right-column">
-                <div class="box small-box">
-                    <!-- <h3>おいしいものの見分け方</h3> -->
-                    <div class="img-placeholder">
-                        <img id="img-select" src="" alt="見分け方の画像">
-                    </div>
-                </div>
-                
-            </div>
-        </div>
+          <button id="back-btn">← 戻る</button>
+          <h2 id="vege-title">野菜の名前</h2>
     </div>
-
+    
+    <!-- 画像表示エリア（不必要な入れ子を削除） -->
+    <div class="detail-content">
+        <img id="img-select" src="" alt="見分け方の画像">
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
