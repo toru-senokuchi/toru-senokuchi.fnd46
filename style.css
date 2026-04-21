@@ -2,11 +2,11 @@
 body {
     background-color: #fcfaf5; 
     margin: 0;
+    font-family: "Zen Maru Gothic", sans-serif;
 }
 
 /* 2. タイトルの文字設定 */
 .main-title {
-    font-family: "Zen Maru Gothic", sans-serif;
     font-size: 150px;
     font-weight: 700;
     color: #ffffff; 
@@ -48,29 +48,67 @@ body {
 
 /* 6. 野菜カードにマウスを乗せた時の動き */
 .vege-item:hover {
-    transform: translateY(-8px); /* ひょこっと上に浮く */
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* 影を強くする */
+    transform: translateY(-8px); 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
 }
 
 /* 7. 野菜の画像（アイコン） */
 .vege-icon {
     width: 100%;           /* カードの幅に合わせて自動調整 */
-    max-width: 220px;     /* 大きくなりすぎないように */
+    max-width: 200px;     /* 大きくなりすぎないように */
     height: auto;
     margin-bottom: 15px;
+    object-fit: contain;
 }
 
 /* 8. 野菜の名前 */
 .vege-name {
-    font-size: 30px;       
+    font-size: 24px;       
     color: #5d4037;    
-    font-family: "Zen Maru Gothic", sans-serif;
     margin: 0;
     font-weight: bold;
 }
 
-/* 画像がない時（準備中） */
+/* 9. 画像がない時（準備中） */
 #img-select[src$="no-image.png"] {
     opacity: 0.5; 
     max-width: 300px; 
+}
+
+/* 10. 詳細ページ（戻るボタンなど） */
+#back-btn {
+    padding: 10px 25px;
+    font-size: 18px;
+    background-color: #5d4037;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+
+/* 11. タブレットサイズ（1024px以下） */
+@media (max-width: 1024px) {
+    .main-title { font-size: 80px; padding: 80px 20px; }
+    #vege-container { grid-template-columns: repeat(3, 1fr); } /* ★ 3列に減らす */
+}
+
+/* 12. スマホサイズ（600px以下） */
+@media (max-width: 600px) {
+    .main-title {
+        font-size: 45px; /* ★ 文字をスマホサイズに縮小 */
+        padding: 60px 10px;
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    #vege-container {
+        grid-template-columns: repeat(2, 1fr); /* ★ スマホは2列 */
+        gap: 15px;
+        padding: 20px 15px;
+    }
+
+    .vege-item { padding: 15px 10px; }
+    .vege-name { font-size: 18px; }
+    .vege-icon { max-width: 120px; }
 }
