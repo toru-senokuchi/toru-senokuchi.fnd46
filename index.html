@@ -1,26 +1,48 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="theme-color" content="#000000">
-  
-  <script src="modules/lodash.min.js"></script>
-  <script src="modules/test-boilerplate.js"></script>
-  <script src="script.js"></script>
-  
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>野菜のすすめ</title>
+    <!-- Google Fonts の読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Zen+Maru+Gothic:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <h1>DIG プログラミング基礎へようこそ！</h1>
-  <h2>Mac をお使いの方は、 <font color="blue"> Cmd + Option + J</font><br>
-    Windows/Linux をお使いの方は、 <font color="blue"> Control+Shift+J</font> <br>
-    をクリックして、デベロッパーツールを開いてください。</h2>
-  <h2>下記にユニコーンの画像が表示されていれば成功です！</h2>
-  <img src="https://cdn.dribbble.com/users/1281272/screenshots/4515441/unicorn.gif">
-  <h3>30分悩んで進まなくなったら…helpチャンネルで質問してみましょう！</h3>
-</body>
 
+    <!-- メイン画面：野菜一覧 -->
+    <div id="home-page">
+        <header>
+            <h1 class="main-title">野菜のすすめ</h1>
+        </header>
+        <main id="vege-container" class="container"></main>
+    </div>
+
+    <!-- 詳細画面：紹介ページ（初期状態はhiddenで隠す） -->
+    <div id="detail-page" class="hidden">
+        <div class="detail-header">
+            <button id="back-btn">← 戻る</button>
+            <h2 id="vege-title">野菜の名前</h2>
+        </div>
+        
+        <div class="detail-layout">
+        
+            <!-- ：見分け方 -->
+            <div class="right-column">
+                <div class="box small-box">
+                    <!-- <h3>おいしいものの見分け方</h3> -->
+                    <div class="img-placeholder">
+                        <img id="img-select" src="" alt="見分け方の画像">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
