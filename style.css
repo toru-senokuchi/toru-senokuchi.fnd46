@@ -54,8 +54,8 @@ body {
 
 /* 7. 野菜の画像（アイコン） */
 .vege-icon {
-    width: 100%;           /* カードの幅に合わせて自動調整 */
-    max-width: 200px;     /* 大きくなりすぎないように */
+    width: 100%;           
+    max-width: 200px;    
     height: auto;
     margin-bottom: 15px;
     object-fit: contain;
@@ -69,13 +69,27 @@ body {
     font-weight: bold;
 }
 
-/* 9. 画像がない時（準備中） */
-#img-select[src$="no-image.png"] {
-    opacity: 0.5; 
-    max-width: 300px; 
+/* 10. 詳細画面の画像（見分け方・準備中 共通） */
+#img-select {
+    width: 95%;        
+    max-width: 800px;   
+    height: auto;      
+    display: block;     
+    margin: 20px auto;  
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
-/* 10. 詳細ページ（戻るボタンなど） */
+#img-select[src$="no-image.png"] {
+    width: 70%;         
+    max-width: 400px;   
+    opacity: 0.5;
+    border: 2px dashed #ddd;
+    box-shadow: none;
+}
+
+
+/* 11. 詳細ページ（戻るボタンなど） */
 #back-btn {
     padding: 10px 25px;
     font-size: 18px;
@@ -88,22 +102,22 @@ body {
 }
 
 
-/* 11. タブレットサイズ（1024px以下） */
+/* 12. タブレットサイズ（1024px以下） */
 @media (max-width: 1024px) {
     .main-title { font-size: 80px; padding: 80px 20px; }
     #vege-container { grid-template-columns: repeat(3, 1fr); } /* ★ 3列に減らす */
 }
 
-/* 12. スマホサイズ（600px以下） */
+/* 13. スマホサイズ（600px以下） */
 @media (max-width: 600px) {
     .main-title {
-        font-size: 45px; /* ★ 文字をスマホサイズに縮小 */
+        font-size: 45px; 
         padding: 60px 10px;
         text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     }
 
     #vege-container {
-        grid-template-columns: repeat(2, 1fr); /* ★ スマホは2列 */
+        grid-template-columns: repeat(2, 1fr); 
         gap: 15px;
         padding: 20px 15px;
     }
