@@ -38,7 +38,7 @@ for (let i = 0; i < vegetables.length; i++) {
     item.onclick = function() {
         document.getElementById('home-page').classList.add('hidden');
         document.getElementById('detail-page').classList.remove('hidden');
-        document.getElementById('vege-title').innerText = vege.name + "の見分け方";
+        document.getElementById('vege-title').innerText = "新鮮な" + vege.name + "の見分け方";
 
         const imgElement = document.getElementById('img-select');
         
