@@ -1,0 +1,76 @@
+/* 1. 画面全体の背景 */
+body {
+    background-color: #fcfaf5; 
+    margin: 0;
+}
+
+/* 2. タイトルの文字設定 */
+.main-title {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-size: 150px;
+    font-weight: 700;
+    color: #ffffff; 
+    text-shadow: 10px 10px 10px rgba(0, 26, 255, 0.5); 
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('images/vegetables.png');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    margin: 0;
+}
+
+/* 3. 詳細ページの要素を非表示にする */
+.hidden {
+    display: none ;
+}
+
+/* 4. 野菜のアイコンを並べる箱 */
+#vege-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 30px; 
+    padding: 40px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+/* 5. 野菜カード */
+.vege-item {
+    background-color: #ffffff; 
+    border-radius: 20px;      
+    padding: 50px 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+    border: 1px solid #f0f0f0; 
+}
+
+/* 6. 野菜カードにマウスを乗せた時の動き */
+.vege-item:hover {
+    transform: translateY(-8px); /* ひょこっと上に浮く */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* 影を強くする */
+}
+
+/* 7. 野菜の画像（アイコン） */
+.vege-icon {
+    width: 100%;           /* カードの幅に合わせて自動調整 */
+    max-width: 220px;     /* 大きくなりすぎないように */
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* 8. 野菜の名前 */
+.vege-name {
+    font-size: 30px;       
+    color: #5d4037;    
+    font-family: "Zen Maru Gothic", sans-serif;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* 画像がない時（準備中） */
+#img-select[src$="no-image.png"] {
+    opacity: 0.5; 
+    max-width: 300px; 
+}
