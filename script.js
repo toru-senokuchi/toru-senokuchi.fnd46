@@ -41,14 +41,18 @@ for (let i = 0; i < vegetables.length; i++) {
         document.getElementById('vege-title').innerText = "おいしい" + vege.name + "の見分け方";
 
         const imgElement = document.getElementById('img-select');
-        
+        const aiCredit = document.getElementById('ai-credit');
+
         if (vege.selectImg) {
             imgElement.src = "images/" + vege.selectImg;
         } else {
             imgElement.src = "images/no-image.png"; 
         }
-    };
 
+        aiCredit.classList.remove('hidden'); 
+    };
+    
+    
     container.appendChild(item);
 }
 
