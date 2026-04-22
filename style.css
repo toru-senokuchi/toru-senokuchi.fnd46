@@ -126,3 +126,13 @@ body {
     .vege-name { font-size: 18px; }
     .vege-icon { max-width: 120px; }
 }
+
+/* 14. 画像生成クレジット */
+.ai-credit {
+    text-align: right;     /* 文字を右寄せにする */
+    max-width: 800px;      /* 画像の max-width と合わせる */
+    margin: 10px auto 0;   /* 中央寄せ（auto）の中で、中身の文字を右に寄せる */
+    font-size: 14px;
+    color: #888;
+    padding-right: 2.5%;   /* 画像の width: 95% に合わせて微調整 */
+}
