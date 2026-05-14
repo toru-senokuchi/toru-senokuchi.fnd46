@@ -13,6 +13,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- 追加：管理者用ボタン -->
+     <button id="admin-login-btn" class="admin-btn">⚙️ 管理者</button>
+
+     <div id="admin-page" class="hidden">
+        <div class="detail-header">
+            <button id="admin-back-btn">← 戻る</button>
+            <h2>管理者用ページ（アクセス解析）</h2>
+        </div>
+        <div class="admin-content">
+            <p class="counter-title">現在の累計アクセス数（PV）</p>
+            <img src="seeyoufarm.com" alt="Access Counter" class="counter-img">
+        </div>
+     </div>
 
     <!-- メイン画面：野菜一覧 -->
     <div id="home-page">
