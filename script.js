@@ -63,7 +63,7 @@ document.getElementById('back-btn').onclick = function() {
 };
 
 // パスワード設定
-const ADMIN_PASSWORD = "password123";
+const ADMIN_PASSWORD = "123";
 
 // 管理者ボタンを押したときの処理
 document.getElementById('admin-login-btn').onclick = function() {
