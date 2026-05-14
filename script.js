@@ -61,3 +61,27 @@ document.getElementById('back-btn').onclick = function() {
     document.getElementById('detail-page').classList.add('hidden');
     document.getElementById('home-page').classList.remove('hidden');
 };
+
+// パスワード設定
+const ADMIN_PASSWORD = "password123";
+
+// 管理者ボタンを押したときの処理
+document.getElementById('admin-login-btn').onclick = function() {
+    const inputPassword = prompt("パスワードを入力してください：");
+    
+    if (inputPassword === ADMIN_PASSWORD) {
+        // パスワードが一致したら管理者ページを表示
+        document.getElementById('home-page').classList.add('hidden');
+        document.getElementById('admin-page').classList.remove('hidden');
+        document.getElementById('admin-login-btn').classList.add('hidden'); // ボタンを隠す
+    } else if (inputPassword !== null) {
+        alert("パスワードが違います。");
+    }
+};
+
+// 管理者ページから戻るボタンの処理
+document.getElementById('admin-back-btn').onclick = function() {
+    document.getElementById('admin-page').classList.add('hidden');
+    document.getElementById('home-page').classList.remove('hidden');
+    document.getElementById('admin-login-btn').classList.remove('hidden'); // ボタンを再表示
+};
