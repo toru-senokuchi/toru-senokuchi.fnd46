@@ -4,22 +4,21 @@
 //野菜のデータ
 const vegetables = [
     { id: 'tomato', name: 'トマト', img: 'tomato.png', selectImg: 'tomato-select.png' },
-    { id: 'carrot', name: 'にんじん', img: 'carrot.png' },
-    { id: 'broccoli', name: 'ブロッコリー', img: 'broccoli.png' },
-    { id: 'onion', name: 'たまねぎ', img: 'onion.png' },
-    { id: 'eggplant', name: 'なす', img: 'eggplant.png' },
-    { id: 'cabbage', name: 'キャベツ', img: 'cabbage.png' },
-    { id: 'potato', name: 'ジャガイモ', img: 'potato.png' },
-    { id: 'spinach', name: 'ほうれん草', img: 'spinach.png' },
-    { id: 'taro', name: 'さといも', img: 'taro.png' },
-    { id: 'white-radish', name: 'だいこん', img: 'white-radish.png' },
-    { id: 'chinese-cabbage', name: 'はくさい', img: 'chinese-cabbage.png' }, 
-    { id: 'cucumber', name: 'きゅうり', img: 'cucumber.png' },
-    { id: 'green-onion', name: 'ねぎ', img: 'green-onion.png' },
-    { id: 'green-pepper', name: 'ピーマン', img: 'green-pepper.png' },
-    { id: 'lettuce', name: 'レタス', img: 'lettuce.png' }
+    { id: 'carrot', name: 'にんじん', img: 'carrot.png' , selectImg: 'carrot-select.png' },
+    { id: 'broccoli', name: 'ブロッコリー', img: 'broccoli.png', selectImg: 'broccoli-select.png' },
+    { id: 'onion', name: 'たまねぎ', img: 'onion.png', selectImg: 'onion-select.png' },
+    { id: 'eggplant', name: 'なす', img: 'eggplant.png', selectImg: 'eggplant-select.png' },
+    { id: 'cabbage', name: 'キャベツ', img: 'cabbage.png', selectImg: 'cabbage-select.png' },
+    { id: 'potato', name: 'ジャガイモ', img: 'potato.png', selectImg: 'potato-select.png' },
+    { id: 'spinach', name: 'ほうれん草', img: 'spinach.png' , selectImg: 'spinach-select.png'},
+    { id: 'taro', name: 'さといも', img: 'taro.png', selectImg: 'taro-select.png' },
+    { id: 'white-radish', name: 'だいこん', img: 'white-radish.png' , selectImg: 'white-radish-select.png'},
+    { id: 'chinese-cabbage', name: 'はくさい', img: 'chinese-cabbage.png', selectImg: 'chinese-cabbage-select.png' }, 
+    { id: 'cucumber', name: 'きゅうり', img: 'cucumber.png' , selectImg: 'cucumber-select.png'},
+    { id: 'green-onion', name: 'ねぎ', img: 'green-onion.png' , selectImg: 'green-onion-select.png'},
+    { id: 'green-pepper', name: 'ピーマン', img: 'green-pepper.png' , selectImg: 'green-pepper-select.png'},
+    { id: 'lettuce', name: 'レタス', img: 'lettuce.png' , selectImg: 'lettuce-select.png'}
 ];
-
 //野菜を並べる箱（vege-container）を取得
 const container = document.getElementById('vege-container');
 
