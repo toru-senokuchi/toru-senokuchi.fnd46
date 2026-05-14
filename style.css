@@ -139,7 +139,7 @@ body {
 
 /* 管理者ボタン（画面右上に固定） */
 .admin-btn {
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 20px;
     padding: 10px 15px;
